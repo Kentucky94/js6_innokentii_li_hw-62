@@ -1,0 +1,17 @@
+.SecondApp{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 80px;
+}
+
+.MovieApp{
+  width: 45%;
+}
+
+.JokeApp{
+  border: 1px solid black;
+  width: 45%;
+  padding: 20px;
+}

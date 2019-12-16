@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import MainPage from "./Containers/MainPage/MainPage";
+import SecondPage from "./Containers/SecondPage/SecondPage";
+import ThirdPage from "./Containers/ThirdPage/ThirdPage";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' exact component={MainPage} />
+        <Route path='/page2' component={SecondPage} />
+        <Route path='/page3' component={ThirdPage} />
+        <Route  render={() => <h1>Page not found</h1>} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

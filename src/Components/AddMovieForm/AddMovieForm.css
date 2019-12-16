@@ -1,0 +1,21 @@
+.form_container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AddTaskInput{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    flex-grow: 1;
+    width: 60%;
+}
+.btn{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    width: 20%;
+}
